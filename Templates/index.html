@@ -11,14 +11,15 @@
     <div>
         <p>Hello, World!</p>
         <p>Please Fill the form below</p>
-
-        <form method="post">
+        <!-- Always make sure you specify the form method -->
+        <form method="post" enctype="multipart/form-data">
             <label for="fname">First name:</label><br>
             <input type="text" id="fname" name="f-name" placeholder="First Name"><br><br>
             <label for="lname">Last name:</label><br>
             <input type="text" id="lname" name="l-name" placeholder="Last name"><br><br>
+            <input type="file" name="text-file" accept=".txt">
             <input type="submit" value="Submit">
-          </form> 
+        </form> 
     </div>
 </body>
 </html>
